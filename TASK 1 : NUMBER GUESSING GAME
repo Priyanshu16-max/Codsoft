@@ -1,0 +1,28 @@
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+    srand((unsigned int) time(NULL));
+    
+    int number = (rand() % 100) + 1;// 599 %100 -> 99
+    
+    int guess = 0;
+    
+    do 
+    {
+        cout <<"Enter Guess (1-100) :";
+        cin >> guess;
+        
+        if (guess > number)
+        cout << "Guess lower !" << endl;  // GUESSING THE LOWER NUMBER 
+        else if(guess < number)
+        cout << "Guess higher !" << endl; // GUESSING THE HIGHER NUMBER 
+        else 
+        cout << "You won !" << endl;     // WHEN  USER GUESS THE RIGHT NUMBER 
+        
+    } while (guess != number);
+        
+    return 0;
+}
