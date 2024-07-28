@@ -1,0 +1,38 @@
+#include<iostream>
+#include<cmath>
+
+using namespace std;
+
+int main()
+{
+    // define variables 
+    string operations ;
+    double number1 , number2;
+    
+    // get user input 
+    cout<<"Enter first Number : ";
+    cin>> number1;
+     cout<<"Enter Operation ( +,-,*,/ ): ";
+    cin>> operations;
+     cout<<"Enter second Number : ";
+    cin>> number2;
+    
+    // if else statement checking entered operation 
+    if(operations == "+"){
+        cout<< number1 + number2;
+    } 
+    else if(operations == "-"){
+        cout<< number1 - number2;
+    }
+    else if(operations == "*"){
+        cout<< number1 * number2;
+    }
+    else if(operations == "/"){
+        cout<< number1 / number2;
+    } else {
+        cout<< "not valid";
+    }
+        
+    
+    return 0;
+}
